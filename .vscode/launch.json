@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "http://192.168.1.20:3000/html/bookmarkmanager.html",
+            "request": "launch",
+            "url": "http://192.168.1.20:3000/html/bookmarkmanager.html"
+        },
+        {
+            "type": "chrome",
+            "name": "http://192.168.1.20:3000/html/files.html",
+            "request": "launch",
+            "url": "http://192.168.1.20:3000/html/files.html"
+        },
+        {
+            "type": "chrome",
+            "name": "http://192.168.1.20:3000/html/img,table,lists.html",
+            "request": "launch",
+            "url": "http://192.168.1.20:3000/html/img,table,lists.html"
+        }
+    ]
+}

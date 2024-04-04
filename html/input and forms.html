@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h1> this is a application form </h1>
+    <form action="post"> 
+        <label for="username"> enter your  name </label>
+        <input type="text" name="username" placeholder="enter your name">
+        <div>
+            <label for="male">male </label>
+        <input type="radio" name="gender" id="male" value="male" autofocus>
+        <label for="female">female</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <div>
+            <input type="checkbox" name="r u subcriber">
+        </div>
+        <label for="place ">select place you live</label>
+        <select name="place" id="place" >
+            <option value="">hyderabad</option>
+            <option value="">mumbai</option>
+            <option value="">Goa</option>
+            <option value="">delhi</option>
+            <option value="">chennai</option>
+        </select>
+        </div>
+        <div>
+            <label for="comment">enter your feeddback</label><br>
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="enter your feedback"></textarea>
+    </div>
+    </form>
+</body>
+</html>
