@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors</title>
+    <style>
+        /* element selector */
+        div{
+            color: red;
+            background-color: burlywood;
+        }
+
+        /* class selector */
+        .red{
+            color: brown;
+            background-color: aqua;
+        }
+
+        /* id selector */
+        #yellow{
+            color: cadetblue;
+            background-color: yellow;
+        }
+        /* CHILD SELECTOR it sholud be direct chjild */
+        div > p{
+            background-color: pink;
+            color: navy;
+
+        }
+        /* desendet selctor-- selects the p where ever it is inside the div */
+        div p{
+            color:black ;
+            background-color: aqua;
+        }
+        /* universal selector */
+         * {
+            height: 12;
+            width: 560px ;
+         }
+        /* pseudo selctor */
+        a:visited{
+            color: chartreuse;
+        }
+        a:active{
+            background-color: red;
+        }
+
+        /* selects p where it is the first child */
+        p:first-child{
+            background-color: red;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div>
+        i am a div
+    </div>
+
+    <div class="red">
+        i am red class file
+    </div>
+
+    <div id="yellow">
+        i am a yellow id  text
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque laudantium repellat minima!</p>
+    </div>
+    <div>
+        <footer>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, dolore! Voluptate officia modi perspiciatis!</p>
+        </footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nesciunt qui consequuntur.</p>
+    </div>
+
+    <a href="youtube.com">youtube</a>
+    <a href="facebook.com">facebook</a>
+</body>
+</html>
