@@ -8,15 +8,19 @@
 <body>
     <h1> this is a application form </h1>
     <form action="post"> 
-        <label for="username"> enter your  name </label>
-        <input type="text" name="username" placeholder="enter your name">
+        <label for="username"> enter your  username </label>
+        <input type="text" name="username" placeholder="enter your name"> <br>
+        <br>
+        <label for="password"> enter the password</label>
+        <input type="password" name="passward" placeholder="enter password">
         <div>
             <label for="male">male </label>
         <input type="radio" name="gender" id="male" value="male" autofocus>
         <label for="female">female</label>
         <input type="radio" name="gender" id="female" value="female">
         <div>
-            <input type="checkbox" name="r u subcriber">
+            <label for="student"> student</label>
+            <input type="checkbox" name="student">
         </div>
         <label for="place ">select place you live</label>
         <select name="place" id="place" >
@@ -30,7 +34,26 @@
         <div>
             <label for="comment">enter your feeddback</label><br>
         <textarea name="comment" id="comment" cols="30" rows="10" placeholder="enter your feedback"></textarea>
+
+
     </div>
+    <label for="file input">upload your aadhar card</label>
+     <input type="file" name="file input"><br>
+
+
+     <label for="phone number">enter your phone number</label>
+    <input type="tel" minlength=10 name="phone number"><br>
+    <input type="submit" name="register" >
+    <input type="reset">
+    <br>
+    enter your email<input type="email">
+    <input type="date"><br>
+    <input type="week"><br>
+    <input type="time"><br>
+    <input type="color"><br>
+    engilsh:<input type="range" ><br>
+    enter your profile urla <input type="url">
+
     </form>
 </body>
 </html>
