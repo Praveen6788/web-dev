@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css boxmodel</title>
+    <!-- here we learnt about padding ,margin,box sixing ,boder  ,margin collapse-->
+    <style>
+        .box{
+            background-color: aqua;
+            
+        }
+        .box1{
+            color: green;
+            border: solid black;
+            margin:5px;
+        
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+            
+            height: 100px;
+        }
+        .box2{
+            color: pink;
+            color: green;
+            border: solid black;
+            margin:25px;
+        
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+            
+            height: 100px;
+            -webkit-margin-top-collapse: collapse;
+            
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        i am a box
+    </div>
+    <div class="box box2">
+        i am a box2
+    </div>
+    
+</body>
+</html>
