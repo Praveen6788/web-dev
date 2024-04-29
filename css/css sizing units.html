@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css sizing unit</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 10px;
+        }
+        .box{
+            box-sizing: border-box;
+            border: solid 2px;
+            width:100vw;
+            margin:auto ;
+            background-color: azure
+        }
+        html{
+            font-size: 18px;
+        }
+        .container{
+            box-sizing: border-box;
+            border: solid 2px;
+            width:100vw;
+            height:80vh;
+            margin:23px auto;
+            font-size:18px;
+            background-color: azure
+
+        }
+        <!-- .container p{
+            font-size: 1.5rem;
+        } -->
+        .container p{
+            font-size: 1.5em;
+        }
+        .cont{
+            color:blue;
+            width:100vmin;
+            background-color: red;
+            border: solid 2px;
+            height: 80vmin;
+        }
+        p{
+            width: 50%;/*the % used mention it from its parent values */
+            border: solid 2px;
+        }
+AA
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        this is box
+    </div>
+    <div class="container">
+        <p>hi everyone</p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, nemo?
+    </div>
+    <div class="cont">
+        <p> iam  another conatiner</p>
+    </div>
+</body>
+</html>

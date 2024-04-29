@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css specificity</title>
+    <style>
+        h1{
+            color: aqua;
+        }
+        .yellow{
+            color: yellow !important; /* important can over ride th inline style selector */
+
+        }
+        .cpur{
+            color: purple;
+        }
+        .cred{
+            color: red;
+        }
+        /* if same type of selector there the last one which is declared is applied or won 
+          inline style > id selector style attribute > class or attribute selector >element selector > universal selector
+        */
+        [a]{
+            background-color: red;/* attribute selector*/
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="color:aqua;" class="yellow cred cpur" a="5">csss specificity</h1>
+    </div>
+    
+</body>
+</html>
+
+<!-- 
+    specificity
+    universal  = 0
+    class = 10
+    attribute =10
+    id = 100
+    inline = 1000
+    important = 10000
+ -->
