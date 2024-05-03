@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling List in CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            background-color: pink;
+            display:inline-block;
+        
+        }
+
+        ul {
+            list-style: none;
+            display:flex;
+            justify-content: end; /* Horizontally align items to the center */
+        }
+
+        li {
+            padding: 10px;
+            margin: 0 5px; /* Optional: Add some space between list items */
+    
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Support</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>
