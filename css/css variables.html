@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables</title>
+    <style>
+        :root{
+            /* global variable declaration */
+            --color:blue;
+            --seccolor:pink;
+            --defpad:15px
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color:var(--color);
+        }
+        .container{
+            /* local variable declaration 
+            local variable over writes global variables*/
+
+            --seccolor:yellow;
+            background-color:var(--thirdlor,red); 
+            /* if variable not found the color which is given beside is atken */
+        }
+        ul li{
+            list-style: none;
+            margin: 1px;
+            padding: var(--defpad);
+            border: solid black 2px;
+        }
+        ul{
+            display: flex;
+            justify-content: end;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>customer care</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ipsam natus, cum doloremque dignissimos placeat quae accusamus animi laborum consequatur numquam expedita exercitationem!
+    </div>
+    
+</body>
+</html>
