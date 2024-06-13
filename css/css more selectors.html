@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> more on css selectors</title>
+    <style>
+        /*.box:first-child{
+            background-color: aqua;
+        }
+        .box::first-line{
+            background-color: red;
+        } 
+        .boxes *{
+            background-color: aqua;
+            border: solid 1px ;
+            margin-top: 23px;
+        }
+        .box:nth-child(even){
+            background-color: aqua;
+        }
+        .box:nth-child(odd){
+            background-color: rgb(255, 0, 200);
+        }
+        
+        .boxes::before{
+            content: hi everyone  ;
+        }
+        .boxes::after{
+            content: bye everyone ;
+        }*/
+        ::selection{
+            color: rgb(243, 245, 245);
+            background-color: rgb(0, 102, 255);
+        }
+        .box::first-letter{
+            color: red;
+            font-size: 30px;
+        }
+        input::placeholder{
+            color: rgb(133, 133, 133)
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">hi iam a good b0y</div>
+        <div class="box">hi iam a good b0y Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsum ex quo nulla, vero aliquam? Asperiores maiores nisi accusantium quaerat voluptatem fugit nemo, quibusdam magnam ab officiis odit quasi nobis aliquam aliquid autem laborum consequuntur delectus? Veritatis tempore consectetur iusto a aspernatur natus distinctio facilis ab minus magni, omnis, fugit dicta? Reprehenderit cumque nihil impedit? Molestias dignissimos fugit suscipit alias saepe ab, beatae, sapiente molestiae nam praesentium at rerum error atque natus assumenda sint magnam vel ipsum ut! Necessitatibus voluptates id ratione voluptatem esse optio nihil. Natus adipisci facere esse! Dolorum, assumenda facilis! In nam, ea architecto numquam error totam illum dolores aut maiores officiis, ipsam tempore corporis asperiores voluptate ducimus. Vitae odio quisquam consectetur ipsa expedita, aliquid repellat corporis molestias perspiciatis incidunt, rem aspernatur modi suscipit voluptatibus architecto fugit ut facere autem nulla sequi possimus delectus fuga? Nam esse vero suscipit, aperiam sit dolore tenetur deleniti adipisci explicabo accusantium quas necessitatibus quos consequatur maxime rerum vel distinctio modi enim fugiat, provident temporibus perferendis in. Autem consequuntur eius laboriosam quos doloremque animi quaerat ipsa itaque odit aliquam? Dolorem qui error suscipit tempore repudiandae magnam voluptate est id. Voluptatibus accusamus sit quisquam perferendis suscipit porro nemo eum optio, quis totam, repellat tempore quos obcaecati? Maxime eligendi dolore sunt molestiae quisquam ratione nesciunt nostrum quam, nulla provident blanditiis consectetur cumque tenetur ipsa vero quasi amet harum saepe cum est illum! Quaerat dolorum ex qui provident sit?</div>
+        <div class="box">hi iam a good b0y</div>
+        <div class="box">hi iam a good b0y</div>
+    </div>
+    <input type="text" placeholder="hi hello everyone ">
+</body>
+</html>
