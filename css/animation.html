@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container {
+            border: solid 2px black;
+            width: 80%;
+            height: 60vh;
+            display: flex;
+            align-items: end;
+            background-color: aqua;
+            position: relative;
+        }
+        .item {
+            position: absolute;
+            border: solid 2px black;
+            animation: animateY 1s ease-out infinite alternate;
+            padding: 30px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        @keyframes animateX {
+            from {
+                left: 0;
+            }
+            to {
+                left: 100%;
+            }
+        }
+        @keyframes animateY {
+            from {
+                bottom: 0;
+            }
+            to {
+                bottom:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+    </div>
+</body>
+</html>
