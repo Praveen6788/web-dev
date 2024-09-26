@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container red bg-green">
+        <div class="box" data-createdbypraveen>hi i am g .praveen</div>
+        <div class="box">hi i am g .praveen</div>
+    </div>
+
+    <script>
+        let div =document.createElement("div")
+        div.innerHTML =" i am inserted"
+        div.setAttribute("class","created")
+        //<!-- document.querySelector(".container").append(div) -->
+       // <!-- document.querySelector(".container").before(div) -->
+        //<!-- document.querySelector(".container").prepend(div) -->//
+
+        let cont = document.querySelector(".container")
+        //cont.insertAdjacentElement("afterbegin",div)
+        cont.insertAdjacentElement("beforebegin",div)
+
+        // we have adjacenthtml adjacettext
+        
+
+    </script>
+    <script src="insert&del.js"></script>
+</body>
+</html>
