@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        const randomdelay = () => {
+            return new Promise((resolve) => {
+                let timeout = 1 + 6 * Math.random(); // Invoking Math.random()
+                setTimeout(() => {
+                    resolve(); // Properly resolving the promise
+                }, timeout * 700);
+            });
+        };
+
+        
+        
+        const additem = async (element) => {
+            await randomdelay(); // Wait for the random delay
+            let div = document.createElement("div");
+            div.innerHTML = element;
+            
+            if (div.innerHTML.endsWith("...")){
+                div.innerHTML =element
+            }
+            else{
+                div.innerHTML = div.innerHTML + "."
+                document.body.append(div)
+            }
+            
+        };
+
+
+        
+        
+        let heck = ["hacking started", "gathering files", "got access", "gathering passwords", "hacked", "closed files"];
+        
+        const processElements = async () => {
+            for (const element of heck) {
+                await additem(element); // Sequentially waiting for each item to be added
+            }
+        };
+        
+        processElements(); // Start the process
+        
+    </script> 
+</body>
+</html>
